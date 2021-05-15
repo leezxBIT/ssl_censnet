@@ -1,5 +1,5 @@
 # CensNet
-Code release for ["Co-embedding of Nodes and Edges with Graph Neural Networks"](https://arxiv.org/abs/2010.13242) (IEEE PAMI 2020) and ["CensNet: Convolution with Edge-Node Switching in Graph Neural Networks"](https://www.ijcai.org/Proceedings/2019/369) (IJCAI 2019)
+Code is from ["Co-embedding of Nodes and Edges with Graph Neural Networks"](https://arxiv.org/abs/2010.13242) (IEEE PAMI 2020) and ["CensNet: Convolution with Edge-Node Switching in Graph Neural Networks"](https://www.ijcai.org/Proceedings/2019/369) (IJCAI 2019)
 
 # Prerequisites
 * Python3
@@ -14,6 +14,8 @@ You need to move the dataset file into CensNet file.
 
 # Training
 You can run `python train.py` to train and evaluate.
+
+The backbone of the model is CensNet. I added PairwiseDistance pretext task as self-supervised learning task.  Training stategy is joint learning, so the ssl pretext task is regarded as auxiliary task.
 
 # Citation
 If you use this code for you research, please consider citing:  
