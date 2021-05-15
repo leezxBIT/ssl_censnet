@@ -16,22 +16,3 @@ You need to move the dataset file into CensNet file.
 You can run `python train.py` to train and evaluate.
 
 The backbone of the model is CensNet. I added PairwiseDistance pretext task as self-supervised learning task.  Training stategy is joint learning, so the ssl pretext task is regarded as auxiliary task.
-
-# Citation
-If you use this code for you research, please consider citing:  
-```
-@article{jiang2020co,
-  title={Co-embedding of Nodes and Edges with Graph Neural Networks},
-  author={Jiang, Xiaodong and Zhu, Ronghang and Ji, Pengsheng and Li, Sheng},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  year={2020},
-  publisher={IEEE}
-}  
-@inproceedings{jiang2019censnet,
-  title={CensNet: Convolution with Edge-Node Switching in Graph Neural Networks.},
-  author={Jiang, Xiaodong and Ji, Pengsheng and Li, Sheng},
-  booktitle={IJCAI},
-  pages={2656--2662},
-  year={2019}
-}
-```
